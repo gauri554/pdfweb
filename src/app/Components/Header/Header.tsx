@@ -13,22 +13,20 @@ const [openGrid, setOpenGrid] = useState(false)
   const toggleMenu = () => setIsOpen((prev) => !prev);
 
   return (
-    <header className="w-full border-b bg-white sticky top-0 z-50">
+    <header className="w-full border-b border-gray-300 bg-white sticky top-0 z-50">
      <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
 
-  {/* LEFT - Logo */}
+  
   <div className="flex items-center">
     <Link href="/" className="text-2xl font-bold text-red-600">
     <Image src="/images/desklogo.svg" alt="logo" width={100} height={100}/>
     </Link>
   </div>
 
-  {/* CENTER - NavLinks (Desktop Only) */}
   <div className="hidden lg:flex items-center gap-12">
     <NavLinks />
   </div>
 
-  {/* RIGHT - Actions */}
   <div className="hidden lg:flex items-center gap-4">
 
     <Link
@@ -45,12 +43,14 @@ const [openGrid, setOpenGrid] = useState(false)
       Sign up
     </Link>
 
-    <button onClick={()=>setOpenGrid(!openGrid)} className="hover:text-red-600">
+    <button 
+    onMouseEnter={()=>setOpenGrid(!openGrid)}
+    onMouseLeave={()=>setOpenGrid(false)}
+    className="hover:text-red-600 cursor-pointer">
       <LayoutGrid size={20} />
     </button>
   </div>
 
-  {/* MOBILE BUTTON */}
   <button
     onClick={toggleMenu}
     className="lg:hidden"
@@ -61,7 +61,6 @@ const [openGrid, setOpenGrid] = useState(false)
   {openGrid && <GridMegaMenu/>}
 </div>
 
-      {/* Mobile Menu */}
       {isOpen && <MobileMenu closeMenu={() => setIsOpen(false)} />}
     </header>
   );

@@ -18,13 +18,11 @@ export default function ConvertMegaMenu() {
   ]
   return (
      <div className="absolute left-1/2 -translate-x-1/2 top-full mt-6 w-[620px] bg-white rounded-xl shadow-xl border z-50">
-      
-      {/* Arrow */}
+  
       <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white rotate-45 border-l border-t" />
 
       <div className="grid grid-cols-2 gap-12 p-8">
         
-        {/* Convert To */}
         <div>
           <h4 className="text-xs font-semibold text-gray-500 mb-6 tracking-wide">
             CONVERT TO PDF
@@ -43,7 +41,6 @@ export default function ConvertMegaMenu() {
           </ul>
         </div>
 
-        {/* Convert From */}
         <div>
           <h4 className="text-xs font-semibold text-gray-500 mb-6 tracking-wide">
             CONVERT FROM PDF

@@ -60,7 +60,6 @@ export default function AllToolsMegaMenu() {
   return (
     <div className="absolute left-[-70] -translate-x-1/2 top-full mt-6 w-[1000px] bg-white rounded-xl shadow-xl border z-50">
       
-      {/* Arrow */}
       <div className="absolute -top-2 left-[550px] -translate-x-1/2 w-4 h-4 bg-white rotate-45 border-l border-t" />
 
       <div className="grid grid-cols-6 gap-10 p-10">
@@ -84,7 +83,6 @@ export default function AllToolsMegaMenu() {
         ))}
       </div>
 
-      {/* Bottom PDF Intelligence */}
       <div className="border-t px-10 py-6">
         <h4 className="text-xs font-semibold text-gray-500 mb-3 tracking-wide">
           PDF INTELLIGENCE

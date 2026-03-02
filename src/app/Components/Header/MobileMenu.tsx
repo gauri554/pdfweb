@@ -36,7 +36,7 @@ export default function MobileMenu({ closeMenu }: MobileMenuProps) {
     <div className="lg:hidden bg-white border-t">
       <div className="px-4 py-6 flex flex-col gap-5">
 
-        {/* Normal Links */}
+        
         {links.map((link) => (
           <Link
             key={link.name}
@@ -48,7 +48,6 @@ export default function MobileMenu({ closeMenu }: MobileMenuProps) {
           </Link>
         ))}
 
-        {/* Convert PDF Accordion */}
         <div>
           <button
             onClick={() => setOpenConvert(!openConvert)}
@@ -63,7 +62,6 @@ export default function MobileMenu({ closeMenu }: MobileMenuProps) {
           {openConvert && (
             <div className="mt-4 ml-4 flex flex-col gap-4">
 
-              {/* Convert To */}
               <div>
                 <p className="text-xs font-semibold text-gray-500 mb-3 uppercase">
                   Convert to PDF
@@ -80,7 +78,6 @@ export default function MobileMenu({ closeMenu }: MobileMenuProps) {
                 ))}
               </div>
 
-              {/* Convert From */}
               <div>
                 <p className="text-xs font-semibold text-gray-500 mb-3 uppercase">
                   Convert from PDF
@@ -103,7 +100,6 @@ export default function MobileMenu({ closeMenu }: MobileMenuProps) {
 
         <hr />
 
-        {/* Auth Links */}
         <Link
           href="/login"
           onClick={closeMenu}

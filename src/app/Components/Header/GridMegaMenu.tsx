@@ -12,7 +12,6 @@ export default function DesktopAppsMegaMenu() {
 
           <div className="grid grid-cols-3 gap-7">
 
-            {/* LEFT COLUMN */}
             <div className="space-y-3">
               <h3 className="text-xs font-semibold text-gray-400 uppercase">
                 Other Products
@@ -49,7 +48,6 @@ export default function DesktopAppsMegaMenu() {
               </div>
             </div>
 
-            {/* MIDDLE COLUMN */}
             <div className="space-y-8 border-x px-8">
 
               <div>
@@ -91,7 +89,6 @@ export default function DesktopAppsMegaMenu() {
               </div>
             </div>
 
-            {/* RIGHT COLUMN */}
             <div className="space-y-6 text-sm">
 
               <div className="space-y-4">
